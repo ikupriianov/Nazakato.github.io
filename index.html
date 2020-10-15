@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
-<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>н
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<script src="/js/vidhandler.js"></script>
 
 <body style="margin : 0px; overflow: hidden;">
   <a-scene embedded arjs>
     <a-marker preset="hiro">
-      <a-entity position="0 -1 0" scale="0.05 0.05 0.05"
+    <!-- 1 -->
+    <!-- <a-marker type="pattern" emitevents="true"> -->
+    <!-- 2 -->
+      <!-- <a-entity position="0 -1 0" scale="0.05 0.05 0.05"
         gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf">
-      </a-entity>
+      </a-entity> -->
+      <!-- 3 -->
+      <!-- <a-video vidhandler></a-video> -->
+      <!-- 4 -->
+      <a-scene>
+        <a-assets>
+          <video id="pacany" autoplay loop="true" src="pacany.mp4"></video>
+        </a-assets>
+      
+        <!-- Using the asset management system. -->
+        <a-video src="#pacany" width="16" height="9" position="0 0 -20"></a-video>
+      </a-scene>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>

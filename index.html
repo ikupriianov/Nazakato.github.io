@@ -6,6 +6,10 @@
 
 <body style="margin : 0px; overflow: hidden;">
   <a-scene embedded arjs>
+    <a-assets>
+      <video id="pacany" autoplay loop="true" src="/resources/pacany.mp4"></video>
+    </a-assets>
+
     <a-marker preset="hiro">
     <!-- 1 -->
     <!-- <a-marker type="pattern" emitevents="true"> -->
@@ -15,11 +19,7 @@
       </a-entity> -->
       <!-- 3 -->
       <!-- <a-video vidhandler></a-video> -->
-      <!-- 4 -->
-        <a-assets>
-          <video id="pacany" autoplay loop="true" src="/resources/pacany.mp4"></video>
-        </a-assets>
-      
+
         <!-- Using the asset management system. -->
         <a-video src="#pacany" width="16" height="9" position="0 0 -20"></a-video>
     </a-marker>

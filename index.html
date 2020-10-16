@@ -11,13 +11,13 @@
       <video id="pacany" src="resources/pacany.mp4" loop="true" crossorigin></video>
     </a-assets>
 
-    <a-marker type="pattern" url="patterns/kanji.patt" smooth="true" smoothCount="3">
+    <a-marker type="pattern" url="patterns/kanji.patt" smooth="true" smoothCount="2">
       <!-- <a-sphere position="0 0.5 0" material="src: #earth-sphere; transparent: true; opacity: 0.95;">
       </a-sphere> -->
-      <a-image src="#earth-sphere" position="0 0.5 0" rotation="-90 0 0"></a-image>
+      <a-image src="#earth-sphere" position="0 0 0" rotation="-90 0 0"></a-image>
     </a-marker>
 
-    <a-marker  type="pattern" url="patterns/hiro.patt" vidhandler smooth="true" smoothCount="3">
+    <a-marker  type="pattern" url="patterns/hiro.patt" vidhandler smooth="true" smoothCount="1">
       <a-plane rotation="-90 0 0" material='src:#pacany'></a-plane>
     </a-marker>
 

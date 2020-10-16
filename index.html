@@ -8,12 +8,17 @@
   <a-scene embedded arjs>
     <a-assets>
       <img id="earth-sphere" src="resources/earth-sphere.jpg" />
+      <video id="pacany" src="resources/pacany.mp4"></video>
     </a-assets>
 
-    <a-marker preset="hiro">
-      <!-- <a-  position="0 0.5 0" material="src: #earth-sphere; transparent: true; opacity: 0.95;">
-      </a-sphere> -->
+    <!-- <a-marker preset="hiro">
+      <a-sphere position="0 0.5 0" material="src: #earth-sphere; transparent: true; opacity: 0.95;">
+      </a-sphere>
       <a-image src="#earth-sphere" position="0 0.5 0"></a-image>
+    </a-marker> -->
+
+    <a-marker preset="hiro">
+      <a-video src="#pacany" position="0 0.5 0"></a-image>
     </a-marker>
 
     <a-entity camera></a-entity>

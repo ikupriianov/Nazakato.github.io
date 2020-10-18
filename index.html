@@ -1,17 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<script src="/js/vidhandler.js"></script>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene embedded arjs>
+    <a-assets>
+      <img id="earth-sphere" src="resources/earth-sphere.jpg" />
+      <video id="pacany" src="resources/pacany.mp4" loop="true" crossorigin></video>
+    </a-assets>
 
-  <title>Going to build something great with AR.js!</title>
+    <a-marker type="pattern" url="patterns/kanji.patt" smooth="true" smoothCount="2">
+      <!-- <a-sphere position="0 0.5 0" material="src: #earth-sphere; transparent: true; opacity: 0.95;">
+      </a-sphere> -->
+      <a-image src="#earth-sphere" position="0 0 0" rotation="-90 0 0"></a-image>
+    </a-marker>
 
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <a-marker  type="pattern" url="patterns/hiro.patt" vidhandler smooth="true" smoothCount="1">
+      <a-plane rotation="-90 0 0" material='src:#pacany'></a-plane>
+    </a-marker>
 
-</head>
-
-<body>
-  <p>Indeed...</p>
-  <!-- <script src="js/scripts.js"></script> -->
+    <a-entity camera></a-entity>
+  </a-scene>
 </body>
+
 </html>

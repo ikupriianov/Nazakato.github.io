@@ -8,7 +8,7 @@
   <a-scene embedded arjs>
     <a-assets>
       <img id="earth-sphere" src="resources/earth-sphere.jpg" />
-      <video id="pacany" src="resources/pacany.mp4" loop="true" crossorigin></video>
+      <video id="neo" src="resources/Neo.mp4" loop="true" crossorigin></video>
     </a-assets>
 
     <a-marker type="pattern" url="patterns/kanji.patt" smooth="true" smoothCount="2">
@@ -18,7 +18,7 @@
     </a-marker>
 
     <a-marker  type="pattern" url="patterns/hiro.patt" vidhandler smooth="true" smoothCount="1">
-      <a-plane rotation="-90 0 0" material='src:#pacany'></a-plane>
+      <a-plane rotation="-90 0 0" material='src:#neo'></a-plane>
     </a-marker>
 
     <a-entity camera></a-entity>

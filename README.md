@@ -1,3 +1,3 @@
-# Dilorfin.github.io
+# Nazakto.github.io
 
-Going to build something great with AR.js
+Built something great with AR.js

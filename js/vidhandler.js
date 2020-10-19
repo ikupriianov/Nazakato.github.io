@@ -1,8 +1,11 @@
-AFRAME.registerComponent('vidhandler', {
+AFRAME.registerComponent('videoHandler', {
+  schema: {
+    targetAsset: { type: "string" }
+  },
   init: function () {
     this.toggle = false;
-    this.vid = document.querySelector("#neo")
-    this.vid.pause()
+    this.vid = document.querySelector(this.data.targetAsset);
+    this.vid.pause();
   },
   tick: function () {
     if (this.el.object3D.visible == true) {

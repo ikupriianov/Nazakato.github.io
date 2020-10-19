@@ -1,4 +1,4 @@
-AFRAME.registerComponent('videoHandler', {
+AFRAME.registerComponent('videohandler', {
   schema: {
     targetAsset: { type: "string" }
   },
